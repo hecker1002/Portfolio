@@ -1,7 +1,7 @@
 
 body{
 
-    background-color: rgb(59, 195, 213) ;
+    background-color: rgb(19, 176, 95) ;
 }
 
 .intro_1 {
@@ -44,7 +44,7 @@ body{
     padding: 0;
 }
 body {
-	background: rgb(102, 231, 231);
+	background: rgb(17, 167, 59);
 }
 .wrapper {
 	display: flex;
@@ -94,7 +94,7 @@ body {
 
 
 body {
-	background: #27b7eb;
+	background:linear-gradient(to bottom, #5f50d2, #5ca7e5);
 	height: 100vh;
 }
 .wrapper span {
