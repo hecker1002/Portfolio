@@ -161,5 +161,30 @@ body {
 	}
 }
 
+.projects_1 {
+	width: 700px; /* Increased width */
+    height: 600px; /* Increased height */
+    margin: 50px; /* Removed 'auto' for left alignment */
+    border: 4px solid rgb(50, 50, 50); /* Retained the border */
+    background-image: linear-gradient(to bottom, rgb(48, 136, 11), rgb(18, 225, 70) 70%);
+    background-image: -webkit-linear-gradient(to bottom, blue, lightblue 70%); /* Webkit fallback */
+    float: left; /* Align the box to the left */
+	 border-radius: 15px 50px 30px;
+	 align-items: center;
+}
+
+.projects_2{
+	width: 700px; /* Increased width */
+    height: 600px; /* Increased height */
+    margin: 50px; /* Removed 'auto' for left alignment */
+    border: 4px solid rgb(50, 50, 50); /* Retained the border */
+    background-image: linear-gradient(to bottom, rgb(48, 136, 11), rgb(18, 225, 70) 70%);
+    background-image: -webkit-linear-gradient(to bottom, blue, lightblue 70%); /* Webkit fallback */
+    float: right; /* Align the box to the left */
+	 border-radius: 15px 50px 30px;
+	 align-items: center;
+}
+
+
 
  

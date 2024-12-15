@@ -38,3 +38,5 @@ function type() {
 
 // Start the typing effect
 type();
+
+
