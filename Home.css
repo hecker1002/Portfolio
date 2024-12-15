@@ -256,3 +256,16 @@ nav a:hover{
     transform: translateX(-50%);
     
 }
+
+
+#visitor-counter {
+	font-size: 20px;
+	color: #1a2227;
+	font-weight: bold;
+	margin: 20px 0;
+	transition: transform 0.3s ease-in-out;
+}
+
+.highlight {
+	transform: scale(1.2);
+}

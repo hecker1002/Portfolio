@@ -14,6 +14,9 @@
 
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Iq6NE2CkTGiM/u2ICXiQpWJxSq3FysfLlCA8xTxpmpJMKwj7g5iu8hMF5TtPfGcxznYa67CS+5bkFXS5sYOxzIg==" crossorigin="anonymous" />
+
+ 
+
 </head>
 <title> Home Page</title>
 <body>
@@ -52,6 +55,8 @@
     
      -->
 
+     <div id="visitor-counter">You are visitor number: </div>
+
      <div class="wrapper">
 		<span></span>
 		<span></span>
@@ -64,6 +69,7 @@
 		<span></span>
 		<span></span>
 </div>
+
 
 <div class="line"></div>
 
@@ -85,6 +91,39 @@
     <div id="typed-text"><b></b></div>
 </div>
 
+
+
+<script>
+    // Access or initialize visitor count in localStorage
+    let count = localStorage.getItem("page_visits");
+if (!count) {
+    count = 1; // First visit
+} else {
+    count = parseInt(count) + 1; // Increment visit count
+}
+localStorage.setItem("page_visits", count);
+
+// Get the visitor-counter element
+const visitorCounter = document.getElementById("visitor-counter");
+
+// Display the count on the page
+visitorCounter.textContent = `You are visitor number: ${count}`;
+
+// Ensure consistent styling
+visitorCounter.style.backgroundColor = "black";
+visitorCounter.style.color = "white";
+visitorCounter.style.padding = "10px"; // Add padding for better visibility
+visitorCounter.style.borderRadius = "5px"; // Optional: rounded corners
+visitorCounter.style.display = "inline-block"; // Ensure it's properly displayed
+
+// Add animation effect for every update
+visitorCounter.style.transition = "transform 0.3s ease-in-out";
+visitorCounter.style.transform = "scale(1.2)";
+setTimeout(() => {
+    visitorCounter.style.transform = "scale(1)";
+}, 300);
+
+</script>
 
 
 <script src="Home.js"></script>
